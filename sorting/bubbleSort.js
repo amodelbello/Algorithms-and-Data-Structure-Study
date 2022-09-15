@@ -1,34 +1,28 @@
-const arrayOfNumbers = require('../data').arrayOfNumbers
+module.exports = {
+  bubbleSort: arr => {
+    // because we know the value that bubbles up to the end is in the correct place
+    // we don't need to compare
+    let unsortedUntil = arr.length
 
-const bubbleSort = arr => {
-  console.warn('original array', arr)
+    let keepGoing = true
+    let numOps = 0
 
-  // because we know the value that bubbles up to the end is in the correct place
-  // we don't need to compare
-  let unsortedUntil = arr.length
+    while (keepGoing) {
+      keepGoing = false
 
-  let keepGoing = true
-  let numOps = 0
+      for (let x = 0; x < unsortedUntil; x++) {
+        numOps += 1
 
-  while (keepGoing) {
-    keepGoing = false
-
-    for (let x = 0; x < unsortedUntil; x++) {
-      numOps += 1
-
-      if (arr[x] > arr[x + 1]) {
-        const temp = arr[x]
-        arr[x] = arr[x + 1]
-        arr[x + 1] = temp
-        keepGoing = true
+        if (arr[x] > arr[x + 1]) {
+          const temp = arr[x]
+          arr[x] = arr[x + 1]
+          arr[x + 1] = temp
+          keepGoing = true
+        }
       }
+      unsortedUntil -= 1
     }
-    unsortedUntil -= 1
-  }
 
-  console.warn('sorted array', arr)
-  console.warn('number of elements', arr.length)
-  console.warn('number of operations', numOps)
+    return [arr, numOps]
+  },
 }
-
-bubbleSort(arrayOfNumbers)

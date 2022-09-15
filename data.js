@@ -1,12 +1,17 @@
+const fs = require('fs')
+
 function randomArray(length, max) {
   return Array.apply(null, Array(length)).map(function () {
     return Math.round(Math.random() * max)
   })
 }
 
-/* const arr = randomArray(100, 99)
+/* const arr = randomArray(10000, 9999)
  * console.warn(arr)
+ * fs.writeFileSync('./array.txt', arr.join(', '), () => {})
  *  */
+const largeArray = fs.readFileSync('./array.txt').toString('utf-8').split(',')
+
 module.exports = {
   arrayOfNumbers: [
     32, 55, 89, 40, 59, 77, 77, 57, 56, 52, 47, 47, 21, 30, 29, 31, 33, 30, 79,
@@ -16,4 +21,5 @@ module.exports = {
     46, 9, 77, 80, 33, 22, 30, 45, 42, 41, 8, 75, 75, 48, 94, 1, 63, 26, 42, 2,
     14, 94,
   ],
+  largeArray,
 }

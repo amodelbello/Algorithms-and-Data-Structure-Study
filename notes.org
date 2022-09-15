@@ -1,0 +1,3 @@
+* Interesting things (maybe language specific)
+  - Arrays of numbers sort faster than arrays of strings
+  - Comparisons are faster than assignments
