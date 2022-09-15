@@ -1,14 +1,13 @@
-const arrayOfNumbers = require('../data').arrayOfNumbers
-
-const linearSearch = (needle, haystack) => {
-  for (let x = 0; x < haystack.length; x++) {
-    if (needle === haystack[x]) {
-      return true
+let numOps = 0
+module.exports = {
+  linearSearch: (needle, haystack) => {
+    for (let x = 0; x < haystack.length; x++) {
+      numOps++
+      if (needle === haystack[x]) {
+        console.warn(`needle: ${needle}, haystack[x]: ${haystack[x]}, x: ${x}`)
+        return [true, numOps]
+      }
     }
-  }
-  return false
+    return [false, numOps]
+  },
 }
-
-console.warn('original array', arrayOfNumbers)
-const exists = linearSearch(9, arrayOfNumbers)
-console.warn('the value is in the array?', exists)
