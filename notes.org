@@ -1,3 +1,13 @@
 * Interesting things (maybe language specific)
   - Arrays of numbers sort faster than arrays of strings
   - Comparisons are faster than assignments
+
+* Todo
+  - [ ] Find more examples of uses for stacks and queues
+  - [ ] Memorize JavaScript string and array manipulation methods
+    - slice
+    - splice
+    - etc.
+  - [ ] General tricks to know
+    - slice the beginning of an array/string
+    - slice the end of an array/string

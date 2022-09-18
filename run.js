@@ -15,6 +15,13 @@ const linearSearch = require('./search/linearSearch').linearSearch
 const Stack = require('./dataStructures/stack').Stack
 const Queue = require('./dataStructures/queue').Queue
 
+// Recursion
+const arraySum = require('./recursion/arraySum').arraySum
+const stringReversal = require('./recursion/stringReversal').stringReversal
+const countX = require('./recursion/countX').countX
+const staircase = require('./recursion/staircase').staircase
+const fib = require('./recursion/fibonacci').fib
+
 // Sort our large array
 /* console.warn(`Sorting ${largeArray.length.toLocaleString()} elements...`)
  * const t0 = performance.now()
@@ -39,35 +46,55 @@ const Queue = require('./dataStructures/queue').Queue
 /* console.warn('number of operations', numOps) */
 
 // Stack
-const stack = new Stack()
-
-stack
-  .push('hello')
-  .push('nananana')
-  .push(44)
-  .push(false)
-  .push(true)
-  .push('the end')
-console.warn('this is the end', stack.peek())
-const theEnd = stack.pop()
-console.warn('theEnd?', theEnd)
-console.warn('this is not the end', stack.peek())
-console.warn('this is THE END', stack.push('THE END').peek())
-
-console.warn('')
+/* const stack = new Stack()
+ *
+ * stack
+ *   .push('hello')
+ *   .push('nananana')
+ *   .push(44)
+ *   .push(false)
+ *   .push(true)
+ *   .push('the end')
+ * console.warn('this is the end', stack.peek())
+ * const theEnd = stack.pop()
+ * console.warn('theEnd?', theEnd)
+ * console.warn('this is not the end', stack.peek())
+ * console.warn('this is THE END', stack.push('THE END').peek())
+ *
+ * console.warn('')
+ *  */
 
 // Queue
-const queue = new Queue()
+/* const queue = new Queue()
+ *
+ * queue
+ *   .enqueue('the beginning')
+ *   .enqueue('nananana')
+ *   .enqueue(44)
+ *   .enqueue(false)
+ *   .enqueue(true)
+ *   .enqueue('the end')
+ * console.warn('this is the beginning', queue.peek())
+ * const theBeginning = queue.dequeue()
+ * console.warn('theEnd?, no theBeginning', theBeginning)
+ * console.warn('this is not the beginning', queue.peek())
+ * console.warn('this is not THE BEGINNING', queue.enqueue('THE BEGINNING').peek()) */
 
-queue
-  .enqueue('the beginning')
-  .enqueue('nananana')
-  .enqueue(44)
-  .enqueue(false)
-  .enqueue(true)
-  .enqueue('the end')
-console.warn('this is the beginning', queue.peek())
-const theBeginning = queue.dequeue()
-console.warn('theEnd?, no theBeginning', theBeginning)
-console.warn('this is not the beginning', queue.peek())
-console.warn('this is not THE BEGINNING', queue.enqueue('THE BEGINNING').peek())
+const result = arraySum([0, 2, 22, 42, 1, 3, 5, 6, 7, 9])
+console.warn('result of arraySum', result)
+
+const result2 = stringReversal('hello, this is a string.')
+console.warn('result of stringReversal', `$ ${result2} $`)
+
+const numXs = countX('XsXsxthis is a number ox xs XXXX')
+console.warn('result of numXs', numXs)
+
+const numCombos = staircase(11)
+console.warn('numCombos', numCombos)
+
+// 0 1 1 3 5
+const start = new Date().getTime()
+const fibNum = fib(44)
+const end = new Date().getTime()
+
+console.warn('fibs', fibNum, ', time: ', end - start)
