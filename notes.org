@@ -1,13 +1,21 @@
+* Things to memorize about JavaScript
+** String manipulation
+    1. slice()
+    2. substr()
+    3. substring()
+** Array manipulation
+    1. subarray from beginning
+    2. subarray from end
+    3. Same with strings
+** Math
+    1. Math.sqrt()
+    2. Math.floor()
+    3. Math.ceil()
+
 * Interesting things (maybe language specific)
   - Arrays of numbers sort faster than arrays of strings
   - Comparisons are faster than assignments
 
+
 * Todo
   - [ ] Find more examples of uses for stacks and queues
-  - [ ] Memorize JavaScript string and array manipulation methods
-    - slice
-    - splice
-    - etc.
-  - [ ] General tricks to know
-    - slice the beginning of an array/string
-    - slice the end of an array/string
