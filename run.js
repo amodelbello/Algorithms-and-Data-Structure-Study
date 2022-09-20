@@ -3,13 +3,15 @@ const arrayOfNumbers = require('./data').arrayOfNumbers
 const largeArray = require('./data').largeArray.map(Number)
 
 // Sorting algorithms
-const bublleSort = require('./sorting/bubbleSort').bubbleSort
-const insertionSort = require('./sorting/insertionSort').insertionSort
-const selectionSort = require('./sorting/selectionSort').selectionSort
+const bublleSort = require('./algorithms/sorting/bubbleSort').bubbleSort
+const insertionSort =
+  require('./algorithms/sorting/insertionSort').insertionSort
+const selectionSort =
+  require('./algorithms/sorting/selectionSort').selectionSort
 
 // Search algorithms
-const binarySearch = require('./search/binarySearch').binarySearch
-const linearSearch = require('./search/linearSearch').linearSearch
+const binarySearch = require('./algorithms/search/binarySearch').binarySearch
+const linearSearch = require('./algorithms/search/linearSearch').linearSearch
 
 // Data Structures
 const Stack = require('./dataStructures/stack').Stack
