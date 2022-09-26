@@ -8,6 +8,7 @@ const insertionSort =
   require('./algorithms/sorting/insertionSort').insertionSort
 const selectionSort =
   require('./algorithms/sorting/selectionSort').selectionSort
+const quicksort = require('./algorithms/sorting/quicksort').quicksort
 
 // Search algorithms
 const binarySearch = require('./algorithms/search/binarySearch').binarySearch
@@ -81,22 +82,35 @@ const fib = require('./recursion/fibonacci').fib
  * console.warn('theEnd?, no theBeginning', theBeginning)
  * console.warn('this is not the beginning', queue.peek())
  * console.warn('this is not THE BEGINNING', queue.enqueue('THE BEGINNING').peek()) */
+/*
+ * const result = arraySum([0, 2, 22, 42, 1, 3, 5, 6, 7, 9])
+ * console.warn('result of arraySum', result)
+ *
+ * const result2 = stringReversal('hello, this is a string.')
+ * console.warn('result of stringReversal', `$ ${result2} $`)
+ *
+ * const numXs = countX('XsXsxthis is a number ox xs XXXX')
+ * console.warn('result of numXs', numXs)
+ *
+ * const numCombos = staircase(11)
+ * console.warn('numCombos', numCombos)
+ *
+ * // 0 1 1 3 5
+ * const start = new Date().getTime()
+ * const fibNum = fib(44)
+ * const end = new Date().getTime()
+ *
+ * console.warn('fibs', fibNum, ', time: ', end - start) */
 
-const result = arraySum([0, 2, 22, 42, 1, 3, 5, 6, 7, 9])
-console.warn('result of arraySum', result)
+const smallSorted = quicksort([4, 5, 77, 3, 2, 8, 56, 7, 4, 8, 5, 3, 8])
+console.warn('smallSorted', smallSorted)
 
-const result2 = stringReversal('hello, this is a string.')
-console.warn('result of stringReversal', `$ ${result2} $`)
+const largeSorted = quicksort([...largeArray])
 
-const numXs = countX('XsXsxthis is a number ox xs XXXX')
-console.warn('result of numXs', numXs)
+console.warn('largeSorted', largeSorted)
 
-const numCombos = staircase(11)
-console.warn('numCombos', numCombos)
-
-// 0 1 1 3 5
-const start = new Date().getTime()
-const fibNum = fib(44)
-const end = new Date().getTime()
-
-console.warn('fibs', fibNum, ', time: ', end - start)
+/* for (let x = 0; x < largeArray.length; x++) {
+ *   if (x % 92 === 0) {
+ *     console.warn(largeSorted.slice(x - 92, (x / 92) * 92))
+ *   }
+ * } */

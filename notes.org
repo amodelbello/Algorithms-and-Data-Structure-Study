@@ -1,4 +1,37 @@
+* To Learn
+  - Recursion:
+  - [ ] Learn about tail call recursion
+  - [ ] Three stages of recursion: pre, recurse, post
+  - Sorting:
+  - [ ] Heap Sort
+  - [ ] Merge Sort
+  - Trees:
+  - [ ] 3 different ways to traverse a tree
+  - [ ] Tree comparison
+  - [ ] AVL trees
+  - [ ] Red-Black trees
+  - [ ] 2-3-4 trees
+  - Graphs:
+  - [ ] minimum spanning tree
+  - [ ] topological sort
+  - [ ] bidirectional search
+  - [ ] Ployd--Warshall algorithm
+  - [ ] Bellman-Ford algorithm
+  - [ ] Graph Coloring
+  - Misc:
+  - [ ] Find more examples of uses for stacks and queues
+  - [ ] Greedy Algorithms vs?
+
+* To Implement
+  - [ ] Binary Search Tree
+  - [ ] Min/Max Heap
+  - [ ] Trie Tree
+
 * Things to memorize about JavaScript
+** Objects
+    1. Object.values
+    2. Object.keys
+    3. Object.entries
 ** String manipulation
     1. slice()
     2. substr()
@@ -7,6 +40,10 @@
     1. subarray from beginning
     2. subarray from end
     3. Same with strings
+    4. Array.includes() ?
+    5. Do push, pop, shift, unshift mutate?
+    6. for each with index: forEach((element, index) => { /* … */ })
+    7. sort descending
 ** Math
     1. Math.sqrt()
     2. Math.floor()
@@ -15,7 +52,3 @@
 * Interesting things (maybe language specific)
   - Arrays of numbers sort faster than arrays of strings
   - Comparisons are faster than assignments
-
-
-* Todo
-  - [ ] Find more examples of uses for stacks and queues
