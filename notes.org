@@ -1,5 +1,5 @@
 * To Learn
-  - Recursion:
+  - [ ] Recursion:
   - [ ] Learn about tail call recursion
   - [ ] Three stages of recursion: pre, recurse, post
   - Sorting:
@@ -14,13 +14,17 @@
   - Graphs:
   - [ ] minimum spanning tree
   - [ ] topological sort
-  - [ ] bidirectional search
-  - [ ] Ployd--Warshall algorithm
+  - [ ] Bidirectional search
+  - [ ] Floyd--Warshall algorithm
   - [ ] Bellman-Ford algorithm
   - [ ] Graph Coloring
   - Misc:
   - [ ] Find more examples of uses for stacks and queues
-  - [ ] Greedy Algorithms vs?
+  - [X] Greedy Algorithms vs?
+  - [ ] LRU Cache
+  - [ ] Circular linked list
+  - [ ] Radix? something or other?
+  - [ ] Two pointer technique (2-sum, 3-sum) <- this is cool!
 
 * To Implement
   - [ ] Binary Search Tree
@@ -43,7 +47,10 @@
     4. Array.includes() ?
     5. Do push, pop, shift, unshift mutate?
     6. for each with index: forEach((element, index) => { /* … */ })
-    7. sort descending
+    7. sort ascending
+       arr.sort((a, b) => a - b)
+    8. sort descending
+       arr.sort((a, b) => b - a)
 ** Math
     1. Math.sqrt()
     2. Math.floor()

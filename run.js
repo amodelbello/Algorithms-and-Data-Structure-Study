@@ -3,27 +3,27 @@ const arrayOfNumbers = require('./data').arrayOfNumbers
 const largeArray = require('./data').largeArray.map(Number)
 
 // Sorting algorithms
-const bublleSort = require('./algorithms/sorting/bubbleSort').bubbleSort
+const bublleSort = require('./src/algorithms/sorting/bubbleSort').bubbleSort
 const insertionSort =
-  require('./algorithms/sorting/insertionSort').insertionSort
+  require('./src/algorithms/sorting/insertionSort').insertionSort
 const selectionSort =
-  require('./algorithms/sorting/selectionSort').selectionSort
-const quicksort = require('./algorithms/sorting/quicksort').quicksort
+  require('./src/algorithms/sorting/selectionSort').selectionSort
+const quicksort = require('./src/algorithms/sorting/quicksort').quicksort
 
 // Search algorithms
-const binarySearch = require('./algorithms/search/binarySearch').binarySearch
-const linearSearch = require('./algorithms/search/linearSearch').linearSearch
+const binarySearch = require('./src/algorithms/search/binarySearch').binarySearch
+const linearSearch = require('./src/algorithms/search/linearSearch').linearSearch
 
 // Data Structures
-const Stack = require('./dataStructures/stack').Stack
-const Queue = require('./dataStructures/queue').Queue
+const Stack = require('./src/dataStructures/stack').Stack
+const Queue = require('./src/dataStructures/queue').Queue
 
 // Recursion
-const arraySum = require('./recursion/arraySum').arraySum
-const stringReversal = require('./recursion/stringReversal').stringReversal
-const countX = require('./recursion/countX').countX
-const staircase = require('./recursion/staircase').staircase
-const fib = require('./recursion/fibonacci').fib
+const arraySum = require('./src/recursion/arraySum').arraySum
+const stringReversal = require('./src/recursion/stringReversal').stringReversal
+const countX = require('./src/recursion/countX').countX
+const staircase = require('./src/recursion/staircase').staircase
+const fib = require('./src/recursion/fibonacci').fib
 
 // Sort our large array
 /* console.warn(`Sorting ${largeArray.length.toLocaleString()} elements...`)
