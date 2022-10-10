@@ -1,16 +1,27 @@
 * To Learn
-  - [ ] Recursion:
+  - Recursion:
   - [ ] Learn about tail call recursion
   - [ ] Three stages of recursion: pre, recurse, post
   - Sorting:
   - [ ] Heap Sort
   - [ ] Merge Sort
+  - Binary Search
+  - [ ] Binary search when there are duplicates, find left and/or right
+  - [ ] Binary search when you're finding the furthest or closest, <= || >=
+  - Linked Lists:
+  - [ ] 2-pointer technique to find middle node
+        Fast pointer/slow pointer
+  - [ ] Also for Cycle detection?
+        A list where we point to the same node twice.
+  - Stacks & Queues
+  - [ ] Utility of monotonically increasing/decreasing stacks/queues
   - Trees:
   - [ ] 3 different ways to traverse a tree
   - [ ] Tree comparison
   - [ ] AVL trees
   - [ ] Red-Black trees
   - [ ] 2-3-4 trees
+  - [ ] Iterative DFS using a stack
   - Graphs:
   - [ ] minimum spanning tree
   - [ ] topological sort
@@ -25,6 +36,7 @@
   - [ ] Circular linked list
   - [ ] Radix? something or other?
   - [ ] Two pointer technique (2-sum, 3-sum) <- this is cool!
+  - [ ] Sliding window technique
 
 * To Implement
   - [ ] Binary Search Tree
@@ -32,30 +44,51 @@
   - [ ] Trie Tree
 
 * Things to memorize about JavaScript
+** Control flow
+    1. Iterate over an object/array with keys and values
+       for (const [index, value] of [1, 2, 3, 4, 5].entries()) {
+         console.log(index, value);
+       }
 ** Objects
     1. Object.values
     2. Object.keys
     3. Object.entries
+    4. field name from variable: var myObj = {[a]: b};
+** Sets
+    1. Set .size, .add, .clear, .delete, .has
+    2. Convert a set to array - Array.from(set)
+** Maps
 ** String manipulation
     1. slice()
     2. substr()
     3. substring()
+    4. replace() & replaceAll() <- returns a new string does not mutate
+    5. startsWith() & endsWith()
+    6. ' '.repeat(3) -> 3 spaces
+    7. .includes()
 ** Array manipulation
     1. subarray from beginning
     2. subarray from end
     3. Same with strings
     4. Array.includes() ?
     5. Do push, pop, shift, unshift mutate?
-    6. for each with index: forEach((element, index) => { /* … */ })
+    6. forEach, map, with index: forEach((element, index) => { /* … */ })
     7. sort ascending
        arr.sort((a, b) => a - b)
     8. sort descending
        arr.sort((a, b) => b - a)
+    9. Fill an arrray: new Array(len).fill(0);
 ** Math
     1. Math.sqrt()
     2. Math.floor()
     3. Math.ceil()
+    4. Infinity & -Infinity
 
 * Interesting things (maybe language specific)
   - Arrays of numbers sort faster than arrays of strings
   - Comparisons are faster than assignments
+
+* Questions for champion
+  - How many people do you pass vs reject?
+  - As we're using a google doc, in general how important is perfect syntax?
+    - Is emphasis placed on comprehension, and selection of the best algorithm/data structures, and is lenience or inattention shown for syntactical errors?
