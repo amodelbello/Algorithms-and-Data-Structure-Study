@@ -58,6 +58,7 @@
     1. Set .size, .add, .clear, .delete, .has
     2. Convert a set to array - Array.from(set)
 ** Maps
+    1. Map.delete(key)
 ** String manipulation
     1. slice()
     2. substr()
@@ -78,6 +79,7 @@
     8. sort descending
        arr.sort((a, b) => b - a)
     9. Fill an arrray: new Array(len).fill(0);
+    10. Compare two arrays: let difference = arrA.filter(x => !arrB.includes(x));
 ** Math
     1. Math.sqrt()
     2. Math.floor()
